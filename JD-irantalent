@@ -1,0 +1,52 @@
+class IranTalentSpider(scrapy.Spider):
+    name = 'IranTalenSpider'
+    start_urls = []
+
+    for i in range(1, 18):
+        start_urls.append('https://www.irantalent.com/jobs/it-software-web-development-jobs?page=' + str(i))
+
+    def parse(self, response):
+
+        downloaded_positions = self.get_downloaded_positions()
+
+        for item in response.css('.result-item'):
+
+            position_id_text = item.css('::attr(id)').extract_first()
+            position_title = item.css('p.position-title ::text').get()
+            position_company = item.css('p.color-light-black ::text').get()
+
+            position_id = position_id_text.split("-")[1]
+            if downloaded_positions.__contains__(position_id):
+                break
+            
+            position_detail = self.get_position_detail(position_id).json()
+
+            result = {'id': position_id_text,
+            'title': position_title,
+            'company': position_company,
+            'detail': position_detail}
+
+            self.save_position(position_id, result)
+
+            yield {'id': position_id, 'position': position_title}
+
+    def get_position_detail(self, position_id):
+        api_base_url = "https://api.irantalent.com/api/v1/employer/position/"
+        position_api_url = api_base_url + position_id
+        response = requests.get(position_api_url)
+        return response
+
+    def get_downloaded_positions(self):
+        downloaded_position_files = os.listdir()
+        downloaded_position_files = list(filter(lambda f: f.endswith('.json'), downloaded_position_files))
+
+        downloaded_positions = []
+        for position in downloaded_position_files:
+            downloaded_positions.append(position.split(".")[0])
+        return downloaded_positions
+
+    def save_position(self, position_id, result):
+        json_result = json.dumps(result)
+        position_file = open(position_id + ".json", "x")
+        position_file.write(json_result)
+        position_file.close()
