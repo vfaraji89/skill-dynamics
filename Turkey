@@ -1,0 +1,80 @@
+Scraping data from kariyer.net
+
+{
+	"_id":{
+		"$oid":"607d554bccc16606a38d2fae"
+	},
+	"occupation":{
+		"_id":{
+			"$oid":"607aa0e4f950460c576836f3"
+		},
+		"posid":"2018",
+		"title":"Yazılım Mühendisi",
+		"link":"/pozisyonlar/yazilim+muhendisi"
+	},
+	"salary":{
+		"average":"6.110",
+		"lowest":"2.700",
+		"highest":"9.530",
+		"people":"895"
+	},
+	"skills":[
+		"Android Uygulama Geliştirme",
+		"ASP.NET",
+		"C",
+		"C#",
+		"C++"
+	],
+	"universities":[
+		"Orta Doğu Teknik Üniversitesi (ODTÜ)",
+		"İstanbul Teknik Üniversitesi (İTÜ)",
+		"İhsan Doğramacı Bilkent Üniversitesi",
+		"Hacettepe Üniversitesi",
+		"Yıldız Teknik Üniversitesi (YTÜ)"
+	],
+	"majors":[
+		{
+			"title":"Bilgisayar Mühendisliği",
+			"percentage":"%57.3"
+		},
+		{
+			"title":"Yazılım Mühendisliği",
+			"percentage":"%8.4"
+		},
+		{
+			"title":"Elektrik/Elektronik Mühendisliği",
+			"percentage":"%6.2"
+		},
+		{
+			"title":"Bilgisayar Teknolojisi ve Programlama (MYO)",
+			"percentage":"%3.2"
+		},
+		{
+			"title":"Matematik Mühendisliği",
+			"percentage":"%1.9"
+		}
+	],
+	"sectors":[
+		{
+			"title":"Bilişim",
+			"percentage":"%56.8"
+		},
+		{
+			"title":"Finans - Ekonomi",
+			"percentage":"%8.3"
+		},
+		{
+			"title":"Telekomünikasyon",
+			"percentage":"%6.3"
+		},
+		{
+			"title":"Üretim / Endüstriyel Ürünler",
+			"percentage":"%6.3"
+		},
+		{
+			"title":"Elektrik & Elektronik",
+			"percentage":"%4.2"
+		}
+	],
+	"positions_link":"/is-ilanlari/yazilim+muhendisi"
+}
