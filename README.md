@@ -9,7 +9,7 @@ Tokenize the CV: Once the model has been trained, we can use it to analyze the s
 
 Extract the skills: Once the CV has been tokenized, we can use GPT to identify the skills that are mentioned in the Turkish CV. This may involve looking for specific keywords or phrases that are commonly associated with skills, such as "yazılım dilleri" (programming languages) or "proje yönetimi" (project management) in Turkish.
 
-Rank the skills: Finally, we can use GPT to rank the skills according to their relevance or importance to the job or position being applied for in the Turkish job market. This may involve analyzing the frequency of skill mentions in the CV, or comparing the skills to a list of required or desired skills for the job in the Turkish job market.
+**Rank the skill**s: Finally, we can use GPT to rank the skills according to their relevance or importance to the job or position being applied for in the Turkish job market. This may involve analyzing the frequency of skill mentions in the CV, or comparing the skills to a list of required or desired skills for the job in the Turkish job market.
 
 By using GPT technology to analyze skills from a Turkish CV, we can automate the process of identifying and ranking skills, saving time and effort compared to manual analysis. This can help recruiters and hiring managers in Turkey to quickly identify candidates with the skills and expertise that are required for a particular job or position in the Turkish job market.
 
