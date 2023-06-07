@@ -1,5 +1,5 @@
 # skill-dynamics
-Turkey labor Market Index
+Turkey labor Market Index.
 
 Preprocess the CV: As with any country, we need to preprocess the Turkish CV text to clean it up and make it suitable for processing. This may involve removing any irrelevant information such as personal details or formatting information, and converting the CV text into a standardized format for processing.
 
@@ -13,7 +13,7 @@ Train the model: We need to train a GPT model on a large dataset of Turkish CVs 
 
 By using GPT technology to analyze skills from a Turkish CV, we can automate the process of identifying and ranking skills, saving time and effort compared to manual analysis. This can help recruiters and hiring managers in Turkey to quickly identify candidates with the skills and expertise that are required for a particular job or position in the Turkish job market.
 
-#Job description analysis
+#Job description analysis.
 
 Preprocess the job description dataset: As with any dataset, we need to preprocess the job description text to clean it up and make it suitable for processing. This may involve removing any irrelevant information such as company-specific details or formatting information, and converting the job description text into a standardized format for processing.
 
