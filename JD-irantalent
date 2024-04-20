@@ -50,3 +50,7 @@ class IranTalentSpider(scrapy.Spider):
         position_file = open(position_id + ".json", "x")
         position_file.write(json_result)
         position_file.close()
+
+    def get.file.write (json)
+
+
